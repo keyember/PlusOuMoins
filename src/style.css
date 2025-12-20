@@ -19,7 +19,6 @@ body {
   min-height: 100vh; /* Définit la hauteur min en disant "prend 100% de la hauteur visible */
   color: light-dark(#070709, #efefec);
   background-color: light-dark(#efedea, #070709);
-  scale: 150%;
 }
 
 #themeToggle {
@@ -46,9 +45,10 @@ html.force-light {
   justify-content: center;
   gap: 50px;
   margin-top: -50px;
-  border: 2px solid #e3e3e6;
+  border: 2px solid light-dark(#070709, #efefec);
   border-radius: 15px;
   padding: 50px;
+  scale: 150%;
 }
 
 h1 {

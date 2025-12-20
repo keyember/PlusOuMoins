@@ -1,15 +1,24 @@
 // Bouton light/dark
-
 const btn = document.getElementById("themeToggle");
 const html = document.documentElement;
 
 btn.addEventListener("click", () => {
-  const isDark = html.classList.contains("force-dark");
+  // Vérifie si la page est déjà en dark soit par classe, soit par système (merci l'IA pour celle-là)
+  const isSystemDark = window.matchMedia(
+    "(prefers-color-scheme: dark)"
+  ).matches;
+  const hasDarkClass = html.classList.contains("force-dark");
+  const hasLightClass = html.classList.contains("force-light");
 
-  if (isDark) {
+  // État actuel effectif
+  const isCurrentlyDark = hasDarkClass || (!hasLightClass && isSystemDark);
+
+  if (isCurrentlyDark) {
+    // Si la page est en dark, ça force le light
     html.classList.remove("force-dark");
     html.classList.add("force-light");
   } else {
+    // Sinon ça force le dark
     html.classList.remove("force-light");
     html.classList.add("force-dark");
   }
