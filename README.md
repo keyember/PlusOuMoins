@@ -1,7 +1,7 @@
 # 🎮 Plus ou Moins ?
 
 Petit jeu web en JavaScript où le joueur doit deviner un nombre secret entre 1 et 10.  
-Le projet m’a servi d’exercice pour pratiquer le DOM, les événements et un système de thème light/dark. [web:120][web:115]
+Le projet m’a servi d’exercice pour pratiquer le DOM, les événements et un système de thème light/dark.
 
 ---
 
@@ -19,7 +19,7 @@ Le projet m’a servi d’exercice pour pratiquer le DOM, les événements et un
 
 - **HTML5** pour la structure.
 - **CSS3** (Flexbox, `light-dark()`, `color-scheme`) pour le style et le thème.
-- **JavaScript vanilla** pour la logique du jeu et la gestion des événements. [web:81]
+- **JavaScript vanilla** pour la logique du jeu et la gestion des événements.
 
 ---
 
@@ -31,7 +31,7 @@ git clone [https://github.com/<ton-pseudo>/<nom-du-repo>.git](https://github.com
 
 2. Ouvrir le projet dans ton éditeur.
 
-3. Lancer un petit serveur local (par exemple avec l’extension Live Server de VS Code) ou ouvrir `index.html` directement dans le navigateur. [web:118][web:121]
+3. Lancer un petit serveur local (par exemple avec l’extension Live Server de VS Code) ou ouvrir `index.html` directement dans le navigateur.
 
 ---
 
