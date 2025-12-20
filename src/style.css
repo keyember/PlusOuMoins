@@ -1,0 +1,93 @@
+:root {
+  color-scheme: light dark; /* Permet de switch entre le mode light et dark */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh; /* Définit la hauteur min en disant "prend 100% de la hauteur visible */
+  color: light-dark(#070709, #efefec);
+  background-color: light-dark(#efedea, #070709);
+  scale: 150%;
+}
+
+#themeToggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 10;
+  padding: 5px;
+  text-align: center;
+}
+
+html.force-dark {
+  color-scheme: dark;
+} /* Force le mode dark */
+
+html.force-light {
+  color-scheme: light;
+} /* Force le mode light */
+
+#gameMain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  margin-top: -50px;
+  border: 2px solid #e3e3e6;
+  border-radius: 15px;
+  padding: 50px;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+#gameContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+#gameQuestion {
+  font-size: 2.5rem;
+}
+
+#userNumber {
+  display: flex;
+  justify-self: center;
+  width: 200px;
+  height: 35px;
+  font-size: 1.5rem;
+  text-align: center;
+  appearance: textfield; /* Pour cacher les flèches du input */
+  border-radius: 15px;
+}
+
+#gameContent button {
+  width: 100px;
+  height: 25px;
+  font-size: 1rem;
+  margin-top: -5px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+}
+
+#replayBtn {
+  visibility: hidden;
+}
