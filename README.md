@@ -27,7 +27,7 @@ Le projet m’a servi d’exercice pour pratiquer le DOM, les événements et un
 
 1. Cloner le dépôt :
 
-git clone [https://github.com/<ton-pseudo>/<nom-du-repo>.git](https://github.com/Alloudev/AO-plusOUmoins)
+git clone https://github.com/Alloudev/AO-plusOUmoins
 
 2. Ouvrir le projet dans ton éditeur.
 
